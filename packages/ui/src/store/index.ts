@@ -6,3 +6,5 @@ export const IsLoggedIn = atom<LoggedInType>({
   isLoggedIn: false,
   role: "buyer",
 });
+
+export const IsHamburgerMenuOpen = atom<boolean>(false);

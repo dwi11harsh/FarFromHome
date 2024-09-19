@@ -6,6 +6,6 @@
       "@repo/ui/*": ["./src/*"]
     }
   },
-  "include": ["src", "providers"],
+  "include": ["src", "providers", "src/store", "types"],
   "exclude": ["node_modules"]
 }

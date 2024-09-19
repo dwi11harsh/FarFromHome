@@ -1,7 +1,7 @@
 import "@repo/ui/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Providers, cn } from "@repo/ui";
+import { Navbar, Providers, cn } from "@repo/ui";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +18,10 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body className={cn(inter.className)}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
