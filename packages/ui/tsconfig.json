@@ -3,9 +3,12 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@repo/ui/*": ["./src/*"]
+      "@repo/ui/*": ["./src/*"],
+      "@repo/ui/store/*": ["./store/*"],
+      "@repo/ui/types/*": ["./types/*"],
+      "@repo/ui/providers/*": ["./providers/*"]
     }
   },
-  "include": ["src", "providers", "src/store", "types"],
+  "include": ["src", "providers", "store", "types"],
   "exclude": ["node_modules"]
 }

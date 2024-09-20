@@ -6,9 +6,9 @@ export const NavLogo = (): JSX.Element => {
       <Image
         src="/FarFromHome.png"
         alt="Far From Home"
-        width={160}
+        width={180}
         height={10}
-        className="bg-white"
+        className="bg-white rounded-full"
       />
     </>
   );

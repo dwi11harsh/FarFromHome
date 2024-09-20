@@ -17,7 +17,7 @@ const RootLayout = ({
 }): JSX.Element => {
   return (
     <html lang="en">
-      <body className={cn(inter.className)}>
+      <body className={cn(inter.className, "bg-gray-200")}>
         <Providers>
           <Navbar />
           {children}

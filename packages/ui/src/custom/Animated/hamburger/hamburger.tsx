@@ -15,9 +15,8 @@ export const Hamburger = (): JSX.Element => {
     >
       <motion.button
         onClick={() => setActive((prev) => !prev)}
-        className="relative h-20 w-20 rounded-full bg-white/0 transition-colors duration-500 hover:bg-white/30"
+        className="relative h-16 w-16 rounded-full bg-white/0"
         animate={active ? "open" : "close"}
-        initial={false}
       >
         {/* upper line */}
         <motion.span
@@ -26,8 +25,10 @@ export const Hamburger = (): JSX.Element => {
             top: "30%",
             x: "-50%",
             y: "-50%",
+            width: "50%",
+            height: "5%",
           }}
-          className="absolute h-1 w-10 bg-white"
+          className="absolute bg-blue-700 rounded-full"
           variants={{
             open: {
               rotate: ["0deg", "0deg", "45deg"],
@@ -46,8 +47,10 @@ export const Hamburger = (): JSX.Element => {
             top: "50%",
             x: "-50%",
             y: "-50%",
+            width: "50%",
+            height: "5%",
           }}
-          className="absolute h-1 w-10 bg-white"
+          className="absolute bg-blue-700 rounded-full"
           variants={{
             open: {
               rotate: ["0deg", "0deg", "-45deg"],
@@ -60,22 +63,24 @@ export const Hamburger = (): JSX.Element => {
         {/* lower line */}
         <motion.span
           style={{
-            left: "calc(50% + 10px)",
+            left: "calc(50% + 5%)",
             bottom: "30%",
-            x: "-50%",
+            x: "-27%",
             y: "50%",
+            width: "25%",
+            height: "5%",
           }}
-          className="absolute h-1 w-5 bg-white"
+          className="absolute bg-blue-700 rounded-full"
           variants={{
             open: {
               rotate: ["0deg", "0deg", "-45deg"],
               bottom: ["30%", "50%", "50%"],
-              left: "50%",
+              left: "44%",
             },
             close: {
               rotate: ["-45deg", "0deg", "0deg"],
               bottom: ["50%", "50%", "30%"],
-              left: "calc(50% + 10px)",
+              left: "calc(50% + 5%)",
             },
           }}
         />

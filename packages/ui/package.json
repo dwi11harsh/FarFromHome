@@ -38,8 +38,8 @@
     "./lib/*": "./src/lib/*.ts",
     "./hooks/*": "./src/hooks/*.ts",
     "./components/*": "./src/components/*.tsx",
-    "./types/*": "./src/types/*.ts",
-    "./store": "./src/store",
+    "./types/*": "./types/index.ts",
+    "./store": "./store/index.ts",
     ".": "./index.tsx"
   }
 }
